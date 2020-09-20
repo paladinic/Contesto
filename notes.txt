@@ -1,0 +1,20 @@
+Notes:
+
+
+IDEAS:
+
+<!-- <a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Trump on Snakes!</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Plants Holding Weapons</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Treasure Chest with Universe</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Phones Going Shopping</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">DJ Mozart</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Lizards on Microphones</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Fish Eating an Artichoke</button></a>
+<a href="{{ url_for('single_contest') }}"><button class="contest-btn" type="button">Clouds Shaped like Something</button></a> -->
+
+
+TO-DO:
+- Remove either ALL or Contest page (home page)
+- Define better header solution
+- Filter events and upload button by date
+- Add "Edit" contest

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content%}
+	{% for contest in stream%}
+		<article>
+			<h2>
+				{{contest.title}}
+			</h2>
+			<i class="clock"></i><time date-time="{{ contest.start_date }}" class="disTime" datetime="{{ contest.start_date.strftime('%d/%m/%Y')}}">{{ contest.start_date.strftime('%d/%m/%Y')}}</time><a href="{{ url_for('view_contest', contest_id = contest.id) }}" class="view"> View</a>
+			<div>
+				{% if current_user.is_authenticated %}
+				<button type="button" name="button">Upload</button>
+
+				{% else %}
+				<a href="{{ url_for('login') }}"><button type="button" name="button">Sign In</button></a>
+				<a href="{{ url_for('register') }}u"><button type="button" name="button">Sign Up</button></a>
+
+				{% endif %}
+			</div>
+		</article>
+	{% endfor%}
+{% endblock %}

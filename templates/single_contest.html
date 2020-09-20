@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content%}
+<div class="single_contest">
+  <h2>{{contest.title}}</h2>
+  {% if current_user.is_authenticated %}
+  <button type="button" name="button">Upload</button>
+
+  {% else %}
+  <a href="{{ url_for('login') }}"><button type="button" name="button">Sign In</button></a>
+  <a href="{{ url_for('register') }}u"><button type="button" name="button">Sign Up</button></a>
+
+  {% endif %}
+</div>
+{% endblock %}
